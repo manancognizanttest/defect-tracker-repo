@@ -8,5 +8,5 @@ A simple Java-based defect tracking application built during QA Engineer trainin
 - Main.java: Application entry point
 
 ## Author
-Your Name
+Manan Nayak
 Week 4 - Version Control Lab
