@@ -8,3 +8,5 @@ public class DefectReport {
         System.out.println("Total: " + ids.length + " defects");
     }
 }
+
+//adding a comment because merged before adding the comments
