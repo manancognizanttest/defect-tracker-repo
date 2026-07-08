@@ -28,6 +28,18 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('BDD Tests') {
+            steps {
+                echo 'Running Cucumber BDD test suite...'
+                sh 'mvn test -Dcucumber.filter.tags="not @ui"'
+            }
+            post {
+                always {
+                    junit '**/target/cucumber-reports/*.xml'
+                    echo 'BDD test results published'
+                }
+            }
+        }
 
         stage('Package') {
             steps {
